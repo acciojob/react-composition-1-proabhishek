@@ -4,7 +4,7 @@ import './../styles/App.css';
 import Tabs from './Tabs';
 
 
-const tabs = [{titles:"A" , contents:"Hello A"},{titles:"B" , contents:"Hello B"},{titles:"C" , contents:"Hello C"}]
+const tabs = [{titles:"Tab 1" , contents:"Tab 1"},{titles:"Tab 2" , contents:"Tab 2"},{titles:"Tab 3" , contents:"Tab 3"}]
 
 const App = () => {
   return (
