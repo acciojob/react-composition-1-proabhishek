@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 
 
-const Tab = ({tabs}) => {
+const Tabs = ({tabs}) => {
    const [tabClicked, setTabClicked] = useState("");
     
 
@@ -30,4 +30,4 @@ const Tab = ({tabs}) => {
 
 }
 
-export default Tab;
+export default Tabs;

@@ -1,7 +1,7 @@
 
 import React from "react";
 import './../styles/App.css';
-import Tab from './Tab';
+import Tabs from './Tabs';
 
 
 const tabs = [{titles:"A" , contents:"Hello A"},{titles:"B" , contents:"Hello B"},{titles:"C" , contents:"Hello C"}]
@@ -9,7 +9,7 @@ const tabs = [{titles:"A" , contents:"Hello A"},{titles:"B" , contents:"Hello B"
 const App = () => {
   return (
     <div>
-      <Tab tabs={tabs}/>
+      <Tabs tabs={tabs}/>
     </div>
   )
 }
