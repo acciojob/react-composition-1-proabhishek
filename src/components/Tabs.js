@@ -28,6 +28,7 @@ const Tabs = ({tabs}) => {
 
       </div>
      )
+     
    
     
 
