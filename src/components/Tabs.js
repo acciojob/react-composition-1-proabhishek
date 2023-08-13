@@ -23,7 +23,7 @@ const Tabs = ({tabs}) => {
          {
             // tabClicked!="" ? <p>This is the content for {tabClicked}</p> : ""
 
-            tabClicked && <p>This is the content for {tabClicked}</p>
+            tabClicked && <p>This is the content for {tabClicked}.</p>
          }
 
       </div>
