@@ -1,37 +1,24 @@
-import React, {useState} from "react";
+import React,{useState} from "react";
 
+const Tabs = ({tabData}) => {
+   const [activeTab, setActiveTab] = useState(tabData[0])
 
-
-const Tabs = ({tabs}) => {
-    let [tabClicked, setTabClicked] = useState("")
-
-   function handleClick(content){
-        setTabClicked(content)
-   }
-
-
-     return(
+   return (
       <div>
-         <ul>
-           {
-            tabs.map((value) => 
-                <li onClick={()=>handleClick(value.contents)}>{value.titles}</li>
-            )
-           }
-         </ul>
-
-         {
-            // tabClicked!="" ? <p>This is the content for {tabClicked}</p> : ""
-
-            tabClicked && <p>{tabClicked}</p>
-         }
-
+           <ul>
+               {
+                  tabData.map((tab)=>(
+                       <li onClick={()=>setActiveTab(tab)}>{tab.title}</li>
+                  ))
+               }
+           </ul>
+           <div>
+               {
+                 <p>{activeTab.content}</p>
+               }
+          </div>
       </div>
-     )
-
-   
-    
-
+   )
 }
 
-export default Tabs;
+export default Tabs
